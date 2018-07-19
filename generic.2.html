@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Generic - Phantom by HTML5 UP</title>
+    <title>行业巨头在哪里？</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -53,263 +53,22 @@
 
         <!-- Main -->
         <div id="main">
+            <div class="flourish-embed" data-src="visualisation/79951" style="width:800px;height:600px;margin:auto"></div>
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+
             <div class="inner">
-                <h1>Generic Page</h1>
+
                 <span class="image main"></span>
 
-                <head>
-                    <meta charset="utf-8">
-                    <title>ECharts Boilerplate</title>
-                    <!-- Use echarts.js -->
-                    <script src="echarts.min.js"></script>
-                    <script src="map-greater-china.js"></script>
-                </head>
 
-                <body>
+                <p> 总体来看，从2005年到2007年，计算机、互联网等高科技和服务产业增长较为迅速，而一些传统实业例如钢铁逐渐失去领跑地位。 房地产行业的前100富豪数量总体呈下降趋势，2017年的房地产富豪数量比2006年减少一半，但仍然是2017年富豪榜中数量最多的行业。 互联网服务，计算机、电子及电子元器件等行业的富豪数量从2011年迅速增多，是因为该行业与实体经济协调发展的趋势越来越明显，这与全球进入社交媒体时代的时间几乎是相同的。 2008年之前是我国钢铁行业的黄金期，2009年在4万亿投资拉动下也情况良好，但2011年后我国钢铁行业就进入低谷期。
+                    互联网行业的迅速发展带动了物流的兴盛，2014年后，上榜的物流大佬增多。 由于当前经济疲软，机械制造行业的运营也比较困难，2013年之后该行业上榜的富豪也明显减少。 </p>
+                <p> 金融行业的前100富豪在这张图上一直都比较少，这与我们传统的认知不大一样。 2014年之前，我国由于技术、人才、资本等方面距离发达国家还有相当大的差距，因此医药行业的绝大部分为仿制药。而现在我国医药行业面临着结构性调整，创新将成为该行业新的主旋律。
+                </p>
 
-                    <!-- Prepare the DOM element to be held by eCharts -->
-                    <div id="mychart" style="width: 600px;height:400px;margin:auto;"> </div>
 
-                    <script type="text/javascript">
-                        var myChart = echarts.init(document.getElementById('mychart'));
-
-                        option = {
-                            title: {
-                                text: '首富分布图',
-                                subtext: 'Fill in your data',
-                                left: 'center'
-                            },
-                            tooltip: {
-                                // trigger: 'item'
-                            },
-                            legend: {
-                                orient: 'vertical',
-                                left: 'right',
-                                data: ["2005年", '2010年', '2017年']
-                            },
-                            visualMap: {
-                                min: 3,
-                                max: 25,
-                                left: 'left',
-                                top: 'bottom',
-                                text: ['High', 'Low'],
-                                calculable: true
-                            },
-                            geo: {
-                                "map": "china",
-                                "roam": true,
-                                "center": [
-                                    114.31,
-                                    30.52
-                                ],
-                                "zoom": 0,
-                                "scaleLimit": {
-                                    "min": 1,
-                                    "max": 3
-                                },
-                                "label": {
-                                    "normal": {
-                                        "show": false
-                                    },
-                                    "emphasis": {
-                                        "show": false
-                                    }
-                                }
-                            },
-                            series: [{
-                                name: '2005年',
-                                type: 'map',
-                                map: 'china',
-                                roam: false,
-                                geoIndex: 0,
-                                label: {
-                                    normal: {
-                                        // Modify to "true" to show the data
-                                        show: true
-                                    },
-                                    emphasis: {
-                                        show: false
-                                    }
-                                },
-                                data: [{
-                                    name: '广东',
-                                    value: 15
-                                }, {
-                                    name: '北京',
-                                    value: 15
-                                }, {
-                                    name: '福建',
-                                    value: 7
-                                }, {
-                                    name: '河北',
-                                    value: 4
-                                }, {
-                                    name: '湖北',
-                                    value: 2
-                                }, {
-                                    name: '湖南',
-                                    value: 1
-                                }, {
-                                    name: '江苏',
-                                    value: 4
-                                }, {
-                                    name: '山东',
-                                    value: 2
-                                }, {
-                                    name: '河南',
-                                    value: 0
-                                }, {
-                                    name: '四川',
-                                    value: 1
-                                }, {
-                                    name: '浙江',
-                                    value: 9
-                                }, {
-                                    name: '南京',
-                                    value: 0
-                                }, {
-                                    name: '辽宁',
-                                    value: 4
-                                }, {
-                                    name: '山西',
-                                    value: 0
-                                }, {
-                                    name: '上海',
-                                    value: 19
-                                }]
-                            }, {
-                                name: '2010年',
-                                type: 'map',
-                                map: 'china',
-                                roam: false,
-                                geoIndex: 0,
-                                label: {
-                                    normal: {
-                                        // Modify to "true" to show the data
-                                        show: true
-                                    },
-                                    emphasis: {
-                                        show: false
-                                    }
-                                },
-                                data: [{
-                                    name: '广东',
-                                    value: 26
-                                }, {
-                                    name: '北京',
-                                    value: 13
-                                }, {
-                                    name: '福建',
-                                    value: 8
-                                }, {
-                                    name: '河北',
-                                    value: 3
-                                }, {
-                                    name: '湖北',
-                                    value: 0
-                                }, {
-                                    name: '湖南',
-                                    value: 1
-                                }, {
-                                    name: '江苏',
-                                    value: 9
-                                }, {
-                                    name: '山西',
-                                    value: 1
-                                }, {
-                                    name: '山东',
-                                    value: 2
-                                }, {
-                                    name: '河南',
-                                    value: 1
-                                }, {
-                                    name: '四川',
-                                    value: 2
-                                }, {
-                                    name: '浙江',
-                                    value: 10
-                                }, {
-                                    name: '南京',
-                                    value: 0
-                                }, {
-                                    name: '甘肃',
-                                    value: 1
-                                }, {
-                                    name: '上海',
-                                    value: 8
-                                }]
-                            }, {
-                                name: '2017年',
-                                type: 'map',
-                                map: 'china',
-                                roam: false,
-                                geoIndex: 0,
-                                label: {
-                                    normal: {
-                                        // Modify to "true" to show the data
-                                        show: true
-                                    },
-                                    emphasis: {
-                                        show: false
-                                    }
-                                },
-                                data: [{
-                                    name: '广东',
-                                    value: 23
-                                }, {
-                                    name: '北京',
-                                    value: 17
-                                }, {
-                                    name: '福建',
-                                    value: 5
-                                }, {
-                                    name: '河北',
-                                    value: 2
-                                }, {
-                                    name: '湖北',
-                                    value: 1
-                                }, {
-                                    name: '湖南',
-                                    value: 2
-                                }, {
-                                    name: '浙江',
-                                    value: 9
-                                }, {
-                                    name: '江苏',
-                                    value: 5
-                                }, {
-                                    name: '山东',
-                                    value: 5
-                                }, {
-                                    name: '河南',
-                                    value: 1
-                                }, {
-                                    name: '四川',
-                                    value: 4
-                                }, {
-                                    name: '南京',
-                                    value: 2
-                                }, {
-                                    name: '重庆',
-                                    value: 2
-                                }, {
-                                    name: '上海',
-                                    value: 14
-                                }]
-                            }, ]
-                        };
-                        myChart.setOption(option);
-                    </script>
-                </body>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur
-                    id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque
-                    enim turpis, hendrerit tristique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam
-                    venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque
-                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit
-                    amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
             </div>
+
         </div>
 
         <!-- Footer -->
