@@ -54,214 +54,215 @@
         </nav>
 
         <!-- Main -->
-        <h3 style="margin:auto">富豪行业领域走势</h3>
         <div id="main">
-            <div id="container" style="width:800px;height: 600px;margin:auto"></div>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
-            <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
-            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
-            <script type="text/javascript">
-                var dom = document.getElementById("container");
-                var myChart = echarts.init(dom);
-                var app = {};
-                option = null;
-                option = {
-                    title: {},
-                    tooltip: {
-                        trigger: 'axis',
-                        axisPointer: {
-                            type: 'cross',
-                            label: {
-                                backgroundColor: '#6a7985'
-                            }
-                        }
-                    },
-                    legend: {
-                        data: ['房地产', '互联网服务', '电子及电子元器件', '钢铁', '机械设备、器械制造', '金融', "医药、生物制品、医疗保健"]
-                    },
-                    toolbox: {
-                        feature: {
-                            saveAsImage: {}
-                        }
-                    },
-                    grid: {
-                        left: '3%',
-                        right: '4%',
-                        bottom: '3%',
-                        containLabel: true
-                    },
-                    xAxis: [{
-                        type: 'category',
-                        boundaryGap: false,
-                        data: ['2005', "2006", '2007', '2008', '2009', '2010', '2011', "2012", "2013", "2014", "2015", "2016", "2017"]
-                    }],
-                    yAxis: [{
-                        type: 'value'
-                    }],
-                    series: [{
-                        name: '房地产',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [32, 32, 25, 21,
-                            27,
-                            17,
-                            20,
-                            22,
-                            21,
-                            25,
-                            19,
-                            18,
-                            15
-                        ]
-                    }, {
-                        name: '互联网服务',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [5,
-                            6,
-                            5,
-                            6,
-                            3,
-                            3,
-                            4,
-                            7,
-                            10,
-                            9,
-                            7,
-                            8,
-                            11
-                        ]
-                    }, {
-                        name: '电子及电子元器件',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [0,
-                            0,
-                            0,
-                            3,
-                            2,
-                            3,
-                            5,
-                            4,
-                            4,
-                            7,
-                            6,
-                            6,
-                            7
-                        ]
-                    }, {
-                        name: '钢铁',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [6,
-                            1,
-                            11,
-                            10,
-                            12,
-                            6,
-                            5,
-                            5,
-                            4,
-                            2,
-                            6,
-                            5,
-                            5
-                        ]
-                    }, {
-                        name: '机械设备、器械制造',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [6,
-                            1,
-                            11,
-                            10,
-                            12,
-                            6,
-                            5,
-                            5,
-                            4,
-                            2,
-                            6,
-                            5,
-                            5
-                        ]
-                    }, {
-                        name: '金融',
-                        type: 'line',
-                        stack: '总量',
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [0,
-                            0,
-                            0,
-                            1,
-                            1,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            1
-                        ]
-                    }, {
-                        name: '医药、生物制品、医疗保健',
-                        type: 'line',
-                        stack: '总量',
-                        label: {
-                            normal: {
-                                show: true,
-                                position: 'top'
-                            }
-                        },
-                        areaStyle: {
-                            normal: {}
-                        },
-                        data: [3,
-                            3,
-                            2,
-                            5,
-                            9,
-                            11,
-                            9,
-                            10,
-                            11,
-                            12,
-                            0,
-                            0,
-                            0
-                        ]
-                    }]
-                };;
-                if (option && typeof option === "object") {
-                    myChart.setOption(option, true);
-                }
-            </script>
-            <div class="inner">
 
+            <div class="inner">
+                <h3 style="margin:auto">富豪行业领域走势</h3>
+                <div id="container" style="width:800px;height: 600px;margin:auto"></div>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+                <script type="text/javascript">
+                    var dom = document.getElementById("container");
+                    var myChart = echarts.init(dom);
+                    var app = {};
+                    option = null;
+                    option = {
+                        title: {},
+                        tooltip: {
+                            trigger: 'axis',
+                            axisPointer: {
+                                type: 'cross',
+                                label: {
+                                    backgroundColor: '#6a7985'
+                                }
+                            }
+                        },
+                        legend: {
+                            data: ['房地产', '互联网服务', '电子及电子元器件', '钢铁', '机械设备、器械制造', '金融', "医药、生物制品、医疗保健"],
+                            top: "10px"
+                        },
+                        toolbox: {
+                            feature: {
+                                saveAsImage: {}
+                            }
+                        },
+                        grid: {
+                            left: '3%',
+                            right: '4%',
+                            bottom: '3%',
+                            containLabel: true
+                        },
+                        xAxis: [{
+                            type: 'category',
+                            boundaryGap: false,
+                            data: ['2005', "2006", '2007', '2008', '2009', '2010', '2011', "2012", "2013", "2014", "2015", "2016", "2017"]
+                        }],
+                        yAxis: [{
+                            type: 'value'
+                        }],
+                        series: [{
+                            name: '房地产',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [32, 32, 25, 21,
+                                27,
+                                17,
+                                20,
+                                22,
+                                21,
+                                25,
+                                19,
+                                18,
+                                15
+                            ]
+                        }, {
+                            name: '互联网服务',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [5,
+                                6,
+                                5,
+                                6,
+                                3,
+                                3,
+                                4,
+                                7,
+                                10,
+                                9,
+                                7,
+                                8,
+                                11
+                            ]
+                        }, {
+                            name: '电子及电子元器件',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [0,
+                                0,
+                                0,
+                                3,
+                                2,
+                                3,
+                                5,
+                                4,
+                                4,
+                                7,
+                                6,
+                                6,
+                                7
+                            ]
+                        }, {
+                            name: '钢铁',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [6,
+                                1,
+                                11,
+                                10,
+                                12,
+                                6,
+                                5,
+                                5,
+                                4,
+                                2,
+                                6,
+                                5,
+                                5
+                            ]
+                        }, {
+                            name: '机械设备、器械制造',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [6,
+                                1,
+                                11,
+                                10,
+                                12,
+                                6,
+                                5,
+                                5,
+                                4,
+                                2,
+                                6,
+                                5,
+                                5
+                            ]
+                        }, {
+                            name: '金融',
+                            type: 'line',
+                            stack: '总量',
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [0,
+                                0,
+                                0,
+                                1,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1
+                            ]
+                        }, {
+                            name: '医药、生物制品、医疗保健',
+                            type: 'line',
+                            stack: '总量',
+                            label: {
+                                normal: {
+                                    show: true,
+                                    position: 'top'
+                                }
+                            },
+                            areaStyle: {
+                                normal: {}
+                            },
+                            data: [3,
+                                3,
+                                2,
+                                5,
+                                9,
+                                11,
+                                9,
+                                10,
+                                11,
+                                12,
+                                0,
+                                0,
+                                0
+                            ]
+                        }]
+                    };;
+                    if (option && typeof option === "object") {
+                        myChart.setOption(option, true);
+                    }
+                </script>
                 <p> 总体来看，从2005年到2007年，计算机、互联网等高科技和服务产业增长较为迅速，而一些传统实业例如钢铁逐渐失去领跑地位。 房地产行业的前100富豪数量总体呈下降趋势，2017年的房地产富豪数量比2006年减少一半，但仍然是2017年富豪榜中数量最多的行业。 互联网服务，计算机、电子及电子元器件等行业的富豪数量从2011年迅速增多，是因为该行业与实体经济协调发展的趋势越来越明显，这与全球进入社交媒体时代的时间几乎是相同的。 2008年之前是我国钢铁行业的黄金期，2009年在4万亿投资拉动下也情况良好，但2011年后我国钢铁行业就进入低谷期。
                     互联网行业的迅速发展带动了物流的兴盛，2014年后，上榜的物流大佬增多。 由于当前经济疲软，机械制造行业的运营也比较困难，2013年之后该行业上榜的富豪也明显减少。 </p>
                 <p> 金融行业的前100富豪在这张图上一直都比较少，这与我们传统的认知不大一样。 2014年之前，我国由于技术、人才、资本等方面距离发达国家还有相当大的差距，因此医药行业的绝大部分为仿制药。而现在我国医药行业面临着结构性调整，创新将成为该行业新的主旋律。
