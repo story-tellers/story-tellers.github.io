@@ -7,11 +7,13 @@
 <html>
 
 <head>
-    <title>Generic - Phantom by HTML5 UP</title>
+    <title>中国首富了解一下</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- Use echarts.js -->
+    <script src="echarts.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -53,18 +55,115 @@
 
         <!-- Main -->
         <div id="main">
+            <div id="container" style="width: 600px;height:400px;margin:auto"></div>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+            <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+            <script type="text/javascript">
+                var dom = document.getElementById("container");
+                var myChart = echarts.init(dom);
+                var app = {};
+                option = null;
+                option = {
+                    title: {
+                        text: '10年来7位首富资产变化'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data: ["杨惠妍", "刘永行", "王传福", "宗庆后", "梁稳根", "王健林", "马云", "许家印"]
+                    },
+                    radar: {
+                        // shape: 'circle',
+                        name: {
+                            textStyle: {
+                                color: '#fff',
+                                backgroundColor: '#999',
+                                borderRadius: 3,
+                                padding: [3, 5]
+                            }
+                        },
+                        indicator: [{
+                            name: '2007',
+                            max: 2000
+                        }, {
+                            name: '2008',
+                            max: 2000
+                        }, {
+                            name: '2009）',
+                            max: 2000
+                        }, {
+                            name: '2010',
+                            max: 2000
+                        }, {
+                            name: '2011',
+                            max: 2000
+                        }, {
+                            name: '2012',
+                            max: 2000
+                        }, {
+                            name: '2013',
+                            max: 2000
+                        }, {
+                            name: '2014',
+                            max: 2000
+                        }, {
+                            name: '2015',
+                            max: 2000
+                        }, {
+                            name: '2016',
+                            max: 2000
+                        }, {
+                            name: '2017',
+                            max: 2000
+                        }]
+                    },
+                    series: [{
+                        name: '预算 vs 开销（Budget vs spending）',
+                        type: 'radar',
+                        // areaStyle: {normal: {}},
+                        data: [{
+                            value: [1211.5, 151, 266.3, 234, 287.7, 277.2, 439.2, 299.9, 323.9, 70, 1370.34300],
+                            name: '杨惠妍'
+                        }, {
+                            value: [180.8, 204, 375.5, 327, 365.4, 372.1, 397.8, 355.6, 67, 423.7],
+                            name: '刘永行'
+                        }, {
+                            value: [97.5, 72.1, 396, 284, 97.2, 76.9, 219.6, 287.6, 349.3, 49.5, 370.7],
+                            name: '王传福'
+                        }, {
+                            value: [75, 88.4, 327.7, 534, 415.5, 630, 683.2, 673.2, 463.6, 74, 602.4],
+                            name: '宗庆后'
+                        }, {
+                            value: [196.5, 65.6, 211.6, 394, 594.5, 371.7, 305, 278, 33, 278],
+                            name: '梁稳根'
+                        }, {
+                            value: [30, 57.1, 239, 260, 255.7, 504, 860.1, 807.8, 1905, 330, 1668.2],
+                            name: '王健林'
+                        }, {
+                            value: [67.5, 42.2, 79, 121.5, 42.2, 214.2, 433.1, 1934.4, 1384.3, 282, 2555.3],
+                            name: '马云'
+                        }, {
+                            value: [97.5, 62.8, 280, 396.4, 308.7, 329.4, 361.1, 552.5, 98, 2813.5],
+                            name: '许家印'
+                        }]
+                    }]
+                };;
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+            </script>
             <div class="inner">
-                <div class="flourish-embed" data-src="visualisation/79955"></div>
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur
-                    id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque
-                    enim turpis, hendrerit tristique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam
-                    venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque
-                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit
-                    amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+                <p>2005-2017首富财富逐年增长，性别是清一色的男（除极特殊案例杨惠妍）。2005至2012年的首富大多是本科学历，但然有不少是初中甚至小学学历的，首富的行业也基本是传统的制造销售行业。而自从13年之后，首富的学历是清一色的本科，基本都来自知名大学，所从事的行业也都是近两年大热的房地产、娱乐业和新兴互联网领域。</p>
+
             </div>
+
         </div>
 
         <!-- Footer -->
